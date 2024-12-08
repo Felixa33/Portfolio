@@ -1,0 +1,4 @@
+logos/*.png filter=lfs diff=lfs merge=lfs -text
+sosmed/*.png filter=lfs diff=lfs merge=lfs -text
+UI/*.png filter=lfs diff=lfs merge=lfs -text
+illust/bitmap/*.{png,jpg,jpeg} filter=lfs diff=lfs merge=lfs -text
