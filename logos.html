@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logos - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="main-header">Logos</h1>
+    </header>
+<main class="projects-grid">
+    <div class="project-item" onclick="openPopup('source/logos/Logo ESalaam.png', 'Logo ESalaam', 'A logo made for financial application for donation, qurban, zakat and waqf. 2024')">
+        <img src="source/logos/Logo ESalaam.png" alt="Logo ESalaam">
+        <h3>Logo ESalaam</h3>
+    </div>
+        
+    <div class="project-item" onclick="openPopup('source/logos/freshlogo.png', 'Fresh Logo', 'A project made to create a logo for a company that sells fresh produce. 2023', 'tall-image')">
+        <img src="source/logos/freshlogo.png" alt="Fresh Logo">
+        <h3>Fresh Logo</h3>
+    </div>
+        
+    <div class="project-item" onclick="openPopup('source/logos/logokomik.png', 'Comic Logo', 'A project made to create a logo for a company that sells comic books. 2023', 'tall-image')">
+        <img src="source/logos/logokomik.png" alt="Comic Logo">
+        <h3>Comic Logo</h3>
+    </div>
+    
+    <div class="project-item" onclick="openPopup('source/logos/logomother.png', 'Mothers Lunch', 'A project made to create a logo for a restaurant. 2023.', 'tall-image')">
+        <img src="source/logos/logomother.png" alt="Mothers Lunch">
+        <h3>Mothers Lunch</h3>
+    </div>
+    <div class="project-item" onclick="openPopup('source/logos/pearllogo.png', 'Pearl Fun', 'A project made to create a logo for a jewelry store that specializes in pearls. 2023.', 'tall-image')">
+        <img src="source/logos/pearllogo.png" alt="Pearl Fun">
+        <h3>Pearl Fun</h3>
+    </div>
+    <div class="project-item" onclick="openPopup('source/logos/safetylogo.png', 'Safety Project', 'A project made to create a logo for a public service announcement regarding road safety. 2023.', 'tall-image')">
+        <img src="source/logos/safetylogo.png" alt="Safety Project">
+        <h3>Safety Project</h3>
+    </div>
+</main>
+<div id="popup" class="popup hidden">
+    <div class="popup-content">
+        <img id="popup-image" src="" alt="Popup Image">
+        <div class="popup-text">
+            <h2 id="popup-title"></h2>
+            <p id="popup-desc"></p>
+        </div>
+        <span class="close-btn" onclick="closePopup()">×</span>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+<footer>
+    <a href="index.html" class="category-link">Back to Home</a>
+</footer>
+    </main>
+    <footer>
+        <p>&copy; 2024 Felicia Andi Zahra</p>
+    </footer>
+
+</body>
+</html>
